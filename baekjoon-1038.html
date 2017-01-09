@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>네트워크 연결 · GitBook</title>
+        <title>감소하는 수 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,10 +65,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="BAEKJOON-1058.html" />
     
-    
-    <link rel="prev" href="BAEKJOON-11055.html" />
+    <link rel="prev" href="baekjoon-7568.html" />
     
 
     </head>
@@ -137,7 +135,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="BAEKJOON-1922.html">
+        <li class="chapter " data-level="1.2.2" data-path="BAEKJOON-1922.html">
             
                 <a href="BAEKJOON-1922.html">
             
@@ -331,7 +329,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="baekjoon-1038.html">
+        <li class="chapter active" data-level="1.4.5" data-path="baekjoon-1038.html">
             
                 <a href="baekjoon-1038.html">
             
@@ -379,7 +377,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >네트워크 연결</a>
+        <a href="." >감소하는 수</a>
     </h1>
 </div>
 
@@ -394,40 +392,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="1922-&#xB124;&#xD2B8;&#xC6CC;&#xD06C;-&#xC5F0;&#xACB0;"><a href="https://www.acmicpc.net/problem/1922" target="_blank">1922: &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC5F0;&#xACB0;</a></h1>
+                                <h1 id="1038-&#xAC10;&#xC18C;&#xD558;&#xB294;-&#xC218;"><a href="https://www.acmicpc.net/problem/1038" target="_blank">1038: &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;</a></h1>
 <hr>
 <h3 id="&#xBB38;&#xC81C;">&#xBB38;&#xC81C;</h3>
 <blockquote>
-<p>&#xB3C4;&#xD604;&#xC774;&#xB294; &#xCEF4;&#xD4E8;&#xD130;&#xC640; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xBAA8;&#xB450; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xB97C; &#xAD6C;&#xCD95;&#xD558;&#xB824; &#xD55C;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xC544;&#xC27D;&#xAC8C;&#xB3C4; &#xD5C8;&#xBE0C;&#xAC00; &#xC788;&#xC9C0; &#xC54A;&#xC544; &#xCEF4;&#xD4E8;&#xD130;&#xC640; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC9C1;&#xC811; &#xC5F0;&#xACB0;&#xD558;&#xC5EC;&#xC57C; &#xD55C;&#xB2E4;. &#xADF8;&#xB7F0;&#xB370; &#xBAA8;&#xB450;&#xAC00; &#xC790;&#xB8CC;&#xB97C; &#xACF5;&#xC720;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBAA8;&#xB4E0; &#xCEF4;&#xD4E8;&#xD130;&#xAC00; &#xC5F0;&#xACB0;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;. (a&#xC640; b&#xAC00; &#xC5F0;&#xACB0;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xB2E4;&#xB294; &#xB9D0;&#xC740; a&#xC5D0;&#xC11C; b&#xB85C;&#xC758; &#xACBD;&#xB85C;&#xAC00; &#xC874;&#xC7AC;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;. a&#xC5D0;&#xC11C; b&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xC120;&#xC774; &#xC788;&#xACE0;, b&#xC640; c&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xC120;&#xC774; &#xC788;&#xC73C;&#xBA74; a&#xC640; c&#xB294; &#xC5F0;&#xACB0;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xB2E4;.)</p>
-<p>&#xADF8;&#xB7F0;&#xB370; &#xC774;&#xC655;&#xC774;&#xBA74; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xBE44;&#xC6A9;&#xC744; &#xCD5C;&#xC18C;&#xB85C; &#xD558;&#xC5EC;&#xC57C; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xBE44;&#xC6A9; &#xC678;&#xC5D0; &#xB2E4;&#xB978; &#xACF3;&#xC5D0; &#xB3C8;&#xC744; &#xB354; &#xC4F8; &#xC218; &#xC788;&#xC744; &#xAC83;&#xC774;&#xB2E4;. &#xC774;&#xC81C; &#xAC01; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294;&#xB370; &#xD544;&#xC694;&#xD55C; &#xBE44;&#xC6A9;&#xC774; &#xC8FC;&#xC5B4;&#xC84C;&#xC744; &#xB54C; &#xBAA8;&#xB4E0; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294;&#xB370; &#xD544;&#xC694;&#xD55C; &#xCD5C;&#xC18C;&#xBE44;&#xC6A9;&#xC744; &#xCD9C;&#xB825;&#xD558;&#xB77C;. &#xBAA8;&#xB4E0; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD560; &#xC218; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;&#xB294; &#xC5C6;&#xB2E4;.</p>
+<p>&#xC74C;&#xC774; &#xC544;&#xB2CC; &#xC815;&#xC218; X&#xC758; &#xC790;&#xB9BF;&#xC218;&#xAC00; &#xAC00;&#xC7A5; &#xD070; &#xC790;&#xB9BF;&#xC218;&#xBD80;&#xD130; &#xC791;&#xC740; &#xC790;&#xB9BF;&#xC218;&#xAE4C;&#xC9C0; &#xAC10;&#xC18C;&#xD55C;&#xB2E4;&#xBA74;, &#xADF8; &#xC218;&#xB97C; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xB77C;&#xACE0; &#xD55C;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;, 321&#xACFC; 950&#xC740; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xC9C0;&#xB9CC;, 322&#xC640; 958&#xC740; &#xC544;&#xB2C8;&#xB2E4;. N&#xBC88;&#xC9F8; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xC791;&#xC131;&#xD558;&#xC2DC;&#xC624;. 0&#xC740; 0&#xBC88;&#xC9F8; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xC774;&#xACE0;, 1&#xC740; 1&#xBC88;&#xC9F8; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xC774;&#xB2E4;. &#xB9CC;&#xC57D; N&#xBC88;&#xC9F8; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xAC00; &#xC5C6;&#xB2E4;&#xBA74; -1&#xC744; &#xCD9C;&#xB825;&#xD55C;&#xB2E4;.</p>
 </blockquote>
 <h3 id="&#xC785;&#xB825;">&#xC785;&#xB825;</h3>
 <blockquote>
-<p>&#xCCAB;&#xC9F8; &#xC904;&#xC5D0; &#xCEF4;&#xD4E8;&#xD130;&#xC758; &#xC218;(1&lt;=N&lt;=1000)&#xAC00; &#xC8FC;&#xC5B4;&#xC9C4;&#xB2E4;.</p>
-<p>&#xB458;&#xC9F8; &#xC904;&#xC5D0;&#xB294; &#xC5F0;&#xACB0;&#xD560; &#xC218; &#xC788;&#xB294; &#xC120;&#xC758; &#xC218;(1&lt;=M&lt;=100,000)&#xAC00; &#xC8FC;&#xC5B4;&#xC9C4;&#xB2E4;.</p>
-<p>&#xC14B;&#xC9F8; &#xC904;&#xBD80;&#xD130; M+2&#xBC88;&#xC9F8; &#xC904;&#xAE4C;&#xC9C0; &#xCD1D; M&#xAC1C;&#xC758; &#xC904;&#xC5D0; &#xAC01; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294;&#xB370; &#xB4DC;&#xB294; &#xBE44;&#xC6A9;&#xC774; &#xC8FC;&#xC5B4;&#xC9C4;&#xB2E4;. &#xC774; &#xBE44;&#xC6A9;&#xC758; &#xC815;&#xBCF4;&#xB294; &#xC138; &#xAC1C;&#xC758; &#xC815;&#xC218;&#xB85C; &#xC8FC;&#xC5B4;&#xC9C0;&#xB294;&#xB370;, &#xB9CC;&#xC57D;&#xC5D0; a b c &#xAC00; &#xC8FC;&#xC5B4;&#xC838; &#xC788;&#xB2E4;&#xACE0; &#xD558;&#xBA74; a&#xCEF4;&#xD4E8;&#xD130;&#xC640; b&#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294;&#xB370; &#xBE44;&#xC6A9;&#xC774; c&#xB9CC;&#xD07C; &#xB4E0;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;.</p>
+<p>&#xCCAB;&#xC9F8; &#xC904;&#xC5D0; N&#xC774; &#xC8FC;&#xC5B4;&#xC9C4;&#xB2E4;. N&#xC740; 1,000,000&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xC740; &#xC790;&#xC5F0;&#xC218; &#xB610;&#xB294; 0&#xC774;&#xB2E4;.</p>
 </blockquote>
 <h3 id="&#xCD9C;&#xB825;">&#xCD9C;&#xB825;</h3>
 <blockquote>
-<p>&#xBAA8;&#xB4E0; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xB294;&#xB370; &#xD544;&#xC694;&#xD55C; &#xCD5C;&#xC18C;&#xBE44;&#xC6A9;&#xC744; &#xCCAB;&#xC9F8; &#xC904;&#xC5D0; &#xCD9C;&#xB825;&#xD55C;&#xB2E4;.</p>
+<p>&#xCCAB;&#xC9F8; &#xC904;&#xC5D0; N&#xBC88;&#xC9F8; &#xAC10;&#xC18C;&#xD558;&#xB294; &#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD55C;&#xB2E4;.</p>
 </blockquote>
 <h3 id="&#xC608;&#xC81C;-&#xC785;&#xB825;">&#xC608;&#xC81C; &#xC785;&#xB825;</h3>
-<pre><code>6
-9
-1 2 5
-1 3 4
-2 3 2
-2 4 7
-3 4 6
-3 5 11
-4 5 3
-4 6 8
-5 6 8
+<pre><code>18
 </code></pre><h3 id="&#xC608;&#xC81C;-&#xCD9C;&#xB825;">&#xC608;&#xC81C; &#xCD9C;&#xB825;</h3>
-<pre><code>23
+<pre><code>42
 </code></pre><hr>
 <h3 id="&#xD574;&#xC124;">&#xD574;&#xC124;</h3>
-<p><a href="http://www.slideshare.net/secret/8Rm0Pr9tW0HWoJ" target="_blank"><img src="assets/1922.jpeg" alt=""></a></p>
+<hr>
 
                                 
                                 </section>
@@ -455,14 +440,10 @@
 
             
                 
-                <a href="BAEKJOON-11055.html" class="navigation navigation-prev " aria-label="Previous page: 가장 큰 증가 부분 수열">
+                <a href="baekjoon-7568.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 덩치">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="BAEKJOON-1058.html" class="navigation navigation-next " aria-label="Next page: 친구">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -471,7 +452,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"네트워크 연결","level":"1.2.2","depth":2,"next":{"title":"친구","level":"1.2.3","depth":2,"path":"BAEKJOON-1058.md","ref":"BAEKJOON-1058.md","articles":[]},"previous":{"title":"가장 큰 증가 부분 수열","level":"1.2.1","depth":2,"path":"BAEKJOON-11055.md","ref":"BAEKJOON-11055.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["spoiler","ga","disqus","-sharing"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-90035134-1"},"disqus":{"useIdentifier":true,"shortName":"kmudonta"},"spoiler":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BAEKJOON-1922.md","mtime":"2016-12-30T07:00:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T07:58:37.038Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"감소하는 수","level":"1.4.5","depth":2,"previous":{"title":"덩치","level":"1.4.4","depth":2,"path":"baekjoon-7568.md","ref":"baekjoon-7568.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["spoiler","ga","disqus","-sharing"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-90035134-1"},"disqus":{"useIdentifier":true,"shortName":"kmudonta"},"spoiler":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"baekjoon-1038.md","mtime":"2017-01-09T07:58:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T07:58:37.038Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
