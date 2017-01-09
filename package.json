@@ -1,11 +1,12 @@
 {
   "name": "donta-gitbook",
   "version": "1.0.0",
-  "description": "---",
+  "description": "",
   "main": "_book/index.html",
   "scripts": {
     "serve": "gitbook serve",
     "build": "gitbook build",
+    "push": "echo \"cd _book && git checkout gh-pages && git add * && git commit -m 'message' && git push origin gh-pages\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
